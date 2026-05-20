@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JUZT. | Arsip</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#e1dfdf",
+                        "outline": "#747878",
+                        "outline-variant": "#c4c7c7",
+                        "on-background": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "surface-bright": "#fdf8f8",
+                        "surface-container-low": "#f7f3f2",
+                        "primary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#cac6c4",
+                        "surface-container-high": "#ebe7e6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-primary-fixed": "#1c1b1b",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-primary-fixed-variant": "#474746",
+                        "secondary-fixed": "#e4e2e2",
+                        "secondary": "#5e5e5e",
+                        "tertiary-container": "#1c1b1a",
+                        "primary": "#000000",
+                        "surface-tint": "#5f5e5e",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-primary-container": "#858383",
+                        "on-surface": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#f1edec",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#868382",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e6e2df",
+                        "inverse-primary": "#c8c6c5",
+                        "on-surface-variant": "#444748",
+                        "primary-container": "#1c1b1b",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#636262",
+                        "surface": "#fdf8f8",
+                        "tertiary": "#000000",
+                        "background": "#fdf8f8",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "surface-dim": "#ddd9d8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "section-gap": "128px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Noto Serif"],
+                        "button-label": ["Inter"],
+                        "headline-sm": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "display-lg-mobile": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "button-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.1", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Hide scrollbar for clean aesthetic */
+        ::-webkit-scrollbar { width: 0px; background: transparent; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface tracking-tight" href="#">JUZT.</a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex space-x-8 items-center font-label-caps text-label-caps">
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70" href="#">BELANJA</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70" href="#">KOLEKSI</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70" href="#">KEUNGGULAN</a>
+<a class="text-primary dark:text-on-surface border-b border-primary pb-1 cursor-pointer active:opacity-70" href="#">ARSIP</a>
+</nav>
+<!-- Trailing Icons -->
+<div class="flex items-center space-x-6 text-primary dark:text-on-surface">
+<button class="cursor-pointer active:opacity-70 hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="cursor-pointer active:opacity-70 hover:text-primary transition-colors duration-200 hidden md:block">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button class="cursor-pointer active:opacity-70 hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full bg-surface border-t border-outline-variant z-50 py-3 px-margin-mobile">
+<div class="flex justify-between items-center">
+<a class="flex flex-col items-center text-secondary cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1">shopping_bag</span>
+<span class="font-label-caps text-[10px]">BELANJA</span>
+</a>
+<a class="flex flex-col items-center text-secondary cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1">layers</span>
+<span class="font-label-caps text-[10px]">KOLEKSI</span>
+</a>
+<a class="flex flex-col items-center text-secondary cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1">star</span>
+<span class="font-label-caps text-[10px]">KEUNGGULAN</span>
+</a>
+<a class="flex flex-col items-center text-primary cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-label-caps text-[10px] font-bold">ARSIP</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-section-gap flex flex-col items-start mt-12 md:mt-24">
+<span class="font-label-caps text-label-caps text-secondary mb-6 tracking-widest">DIDIRIKAN TAHUN: 2023</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-4xl leading-tight">Arsip: Ditetapkan oleh Niat.</h1>
+<p class="mt-8 font-body-lg text-body-lg text-secondary max-w-2xl">
+                Dokumentasi perjalanan material dan bentuk. Setiap koleksi adalah studi tentang reduksi, fungsionalitas, dan keindahan diam dari struktur murni.
+            </p>
+</section>
+<!-- Seasonal Highlights: Winter 2024 -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-8 order-2 md:order-1">
+<div class="w-full bg-surface-variant aspect-[4/3] md:aspect-video overflow-hidden">
+<img alt="Winter 2024 Collection" class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700 ease-out" data-alt="A striking high-fashion editorial photograph of a minimalist winter trench coat in pure white, draped over a stark structural chair. The lighting is high-key and diffused, casting soft tonal gradients against a stark white background. The mood is severely elegant and cold, emphasizing the heavy wool texture and sharp architectural cut of the garment. Shot in a vast, empty gallery space to emphasize the Quiet Luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSPLUMuWdYSqhpdKwScqtbaJ-r0OJrRP2h4nUd--LNSe-hYzqdqALUCTSL-Fcanhdc_7FwkUWG0YZtZorZ_FLXVzLyZaJchzTtnvrDSJB4L-WpRXv3QUh8uAS05GjNkTJU7pkboN4M1Yx5vG9U825ShF97tBTV_EQdMmXaeEjOFjWBATllh0kjQfMh3j8PhAjYHbCZ6AWH5E4dvU42UhLPwdstxWJ3UlfgAi7YycbJOBNjgUB-jxfNr5dsdAQxq9nRxT-Wgx7SFbs"/>
+</div>
+</div>
+<div class="md:col-span-4 order-1 md:order-2 mb-8 md:mb-0 md:pl-12">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-4">Winter 2024</h2>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                        Eksplorasi volume dan isolasi. Lapisan berat yang mendefinisikan ulang siluet tradisional melalui pemotongan presisi.
+                    </p>
+<a class="inline-block font-button-label text-button-label text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors duration-200" href="#">Lihat Koleksi</a>
+</div>
+</div>
+</section>
+<!-- Limited Edition & Initial Launch Grid -->
+<section class="mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Limited Edition -->
+<div class="flex flex-col">
+<div class="w-full bg-surface-variant aspect-[3/4] mb-6 overflow-hidden">
+<img alt="Limited Edition Accessory" class="w-full h-full object-cover grayscale hover:opacity-90 transition-opacity duration-300" data-alt="Close-up macro photography of a minimalist black leather bag resting on a polished concrete slab. The lighting is dramatic, casting deep shadows that highlight the flawless texture of the leather and the single, unbranded matte silver clasp. The composition is highly asymmetrical, leaving vast negative space around the object. The overall aesthetic is raw, industrial, and undeniably luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5cABJco0ifkfAgXNmPqYrQAVr0ZVg1mcL0xQ7GHMLOMP_AmdxGyMxIEvqEFA-FLZKRfPf3IeBz09m5zF8jSwyLCwhQ5ECK-QQ4Ri6WxK4nW1PbZuYK0CymbhwLUhPkebnK7OT41z1OqstzOd2ePr2B1Rvz5j12igMY5JNRMRj304H_kcmxxuTLXm-hWPdJJ9VyTBmEjJtfzzu-m3B4gfMfd3F022xxgqdrWU771qhVn4BAFMf59bBbsed8KnXDnms0l3VBtWn6vI"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Limited Edition</h3>
+<p class="font-body-md text-body-md text-secondary">Material eksperimental dan bentuk sementara. Tersedia dalam jumlah sangat terbatas.</p>
+</div>
+<!-- Initial Launch -->
+<div class="flex flex-col md:pt-32">
+<div class="w-full bg-surface-variant aspect-square mb-6 overflow-hidden">
+<img alt="Initial Launch Capsule" class="w-full h-full object-cover grayscale hover:opacity-90 transition-opacity duration-300" data-alt="An abstract, architectural composition featuring three crisp white shirts hanging on a thin black metal rail against a pristine white wall. The image focuses on the perfect spacing and rigid lines of the collars and cuffs. Harsh, directional sunlight creates sharp, geometric shadows on the wall behind them. The feeling is clinical, precise, and foundational." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS1B1OrORTfP0nXGvJI7XSMbPkonfqQb2F8o2RKHztoGSq7Z_mljJ92ymNuKfwBId9qt0gLMAM4XYew1ONNnUcRvmgpARlaHaLeTZIIbPjEfeUGCCG5gZZDoL7icsHRinKTcoKDbpokYPy3SZyFQNmEpKuArTsjqbOWpvwtzT0w49PzKcqPV7z5_3T2i9WCzTOguThq_ZZ5r34ESUTRpqT4EyxCsdKaZSx2ZH4NZ708RK1KwWuuq4maSnLRJgii4Z_ks1c6qMMRZ4"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Initial Launch</h3>
+<p class="font-body-md text-body-md text-secondary">Kapsul dasar. Cetak biru dari apa yang kemudian menjadi JUZT.</p>
+</div>
+</section>
+<!-- Pillars (List Format) -->
+<section class="mb-section-gap border-t border-outline-variant pt-12">
+<h2 class="font-label-caps text-label-caps text-secondary mb-12 tracking-widest">PILAR DESAIN</h2>
+<div class="flex flex-col border-b border-outline-variant pb-8 mb-8 group cursor-pointer">
+<div class="flex justify-between items-center w-full">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">The Nomad Trenchs</h3>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+</div>
+</div>
+<div class="flex flex-col border-b border-outline-variant pb-8 mb-8 group cursor-pointer">
+<div class="flex justify-between items-center w-full">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">The Heritage's Bomber</h3>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+</div>
+</div>
+<div class="flex flex-col border-b border-outline-variant pb-8 group cursor-pointer">
+<div class="flex justify-between items-center w-full">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:pl-4 transition-all duration-300">The Structural Shell</h3>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 flex justify-center text-center">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-button-label text-button-label px-12 py-6 uppercase tracking-widest hover:bg-inverse-surface transition-colors duration-300 w-full md:w-auto" href="koleksi.html">
+                BELANJA KOLEKSI TERBARU
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface dark:bg-surface w-full py-section-gap border-t border-outline-variant dark:border-outline mb-[60px] md:mb-0">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="md:col-span-4 flex flex-col mb-12 md:mb-0">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface mb-6 tracking-tight">JUZT.</span>
+<p class="font-body-md text-body-md text-secondary dark:text-on-secondary-container max-w-xs">
+                    © 2024 JUZT. Mendefinisikan ulang gaya Gen Z melalui kejujuran material dan harga yang masuk akal.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-2 md:col-start-7 flex flex-col space-y-4 font-label-caps text-label-caps">
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">BELANJA</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">AKUN</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">PENGEMBALIAN</a>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-2 flex flex-col space-y-4 font-label-caps text-label-caps mt-8 md:mt-0">
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">AGREEMENT</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">PRIVASI</a>
+</div>
+<!-- Social Links -->
+<div class="md:col-span-2 flex flex-col space-y-4 font-label-caps text-label-caps mt-8 md:mt-0">
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">INSTAGRAM</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">FACEBOOK</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">YOUTUBE</a>
+</div>
+</div>
+</footer>
+</body></html>

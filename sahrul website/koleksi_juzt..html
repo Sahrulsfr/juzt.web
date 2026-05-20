@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Koleksi JUZT.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#e1dfdf",
+                        "outline": "#747878",
+                        "outline-variant": "#c4c7c7",
+                        "on-background": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "surface-bright": "#fdf8f8",
+                        "surface-container-low": "#f7f3f2",
+                        "primary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#cac6c4",
+                        "surface-container-high": "#ebe7e6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-primary-fixed": "#1c1b1b",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-primary-fixed-variant": "#474746",
+                        "secondary-fixed": "#e4e2e2",
+                        "secondary": "#5e5e5e",
+                        "tertiary-container": "#1c1b1a",
+                        "primary": "#000000",
+                        "surface-tint": "#5f5e5e",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-primary-container": "#858383",
+                        "on-surface": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#f1edec",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#868382",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e6e2df",
+                        "inverse-primary": "#c8c6c5",
+                        "on-surface-variant": "#444748",
+                        "primary-container": "#1c1b1b",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#636262",
+                        "surface": "#fdf8f8",
+                        "tertiary": "#000000",
+                        "background": "#fdf8f8",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "surface-dim": "#ddd9d8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "section-gap": "128px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Noto Serif"],
+                        "button-label": ["Inter"],
+                        "headline-sm": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "display-lg-mobile": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "button-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.1", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf8f8;
+            color: #1c1b1b;
+        }
+        .hairline-border {
+            border: 1px solid #E3E2E2;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto max-md:px-margin-mobile">
+<div class="flex items-center gap-8 max-md:hidden">
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 font-label-caps text-label-caps" href="#">BELANJA</a>
+<a class="text-primary dark:text-on-surface border-b border-primary pb-1 hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 font-label-caps text-label-caps" href="#">KOLEKSI</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 font-label-caps text-label-caps" href="#">KEUNGGULAN</a>
+<a class="text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 font-label-caps text-label-caps" href="#">ARSIP</a>
+</div>
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface tracking-tight" href="#">JUZT.</a>
+<div class="flex items-center gap-6">
+<button class="text-primary dark:text-on-surface hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-primary dark:text-on-surface hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button class="text-primary dark:text-on-surface hover:opacity-70 transition-opacity relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</button>
+<button class="md:hidden text-primary dark:text-on-surface hover:opacity-70 transition-opacity ml-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-desktop max-md:px-margin-mobile py-16">
+<!-- Header -->
+<header class="mb-16 md:mb-section-gap max-w-3xl">
+<h1 class="font-display-lg text-display-lg max-md:font-display-lg-mobile max-md:text-display-lg-mobile mb-6">Arsitektur Gaya.</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">Koleksi fundamental yang dirancang untuk integritas struktural dan utilitas murni. Siluet tegas, material jujur.</p>
+</header>
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 flex-shrink-0 md:sticky md:top-32 h-fit max-md:mb-12">
+<div class="flex flex-col gap-12">
+<!-- Gaya -->
+<div>
+<h3 class="font-label-caps text-label-caps mb-4 text-primary">GAYA</h3>
+<ul class="space-y-3 font-body-md text-body-md text-secondary">
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-none bg-transparent focus:ring-primary focus:ring-offset-surface" type="checkbox"/><span class="group-hover:text-primary transition-colors">Bomber</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-none bg-transparent focus:ring-primary focus:ring-offset-surface" type="checkbox"/><span class="group-hover:text-primary transition-colors">Oversized</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-none bg-transparent focus:ring-primary focus:ring-offset-surface" type="checkbox"/><span class="group-hover:text-primary transition-colors">Utility</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-none bg-transparent focus:ring-primary focus:ring-offset-surface" type="checkbox"/><span class="group-hover:text-primary transition-colors">Structured</span></label></li>
+</ul>
+</div>
+<!-- Warna -->
+<div>
+<h3 class="font-label-caps text-label-caps mb-4 text-primary">WARNA</h3>
+<div class="flex flex-wrap gap-2">
+<button aria-label="Hitam" class="w-8 h-8 rounded-none border border-outline-variant bg-black focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface"></button>
+<button aria-label="Putih" class="w-8 h-8 rounded-none border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface"></button>
+<button aria-label="Abu-abu" class="w-8 h-8 rounded-none border border-outline-variant bg-[#4A4A4A] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface"></button>
+<button aria-label="Krem" class="w-8 h-8 rounded-none border border-outline-variant bg-[#F5F5DC] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface"></button>
+</div>
+</div>
+<!-- Ukuran -->
+<div>
+<h3 class="font-label-caps text-label-caps mb-4 text-primary">UKURAN</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 border border-outline-variant font-label-caps text-label-caps text-secondary hover:text-primary hover:border-primary transition-colors">S</button>
+<button class="px-4 py-2 border border-primary bg-primary font-label-caps text-label-caps text-on-primary">M</button>
+<button class="px-4 py-2 border border-outline-variant font-label-caps text-label-caps text-secondary hover:text-primary hover:border-primary transition-colors">L</button>
+<button class="px-4 py-2 border border-outline-variant font-label-caps text-label-caps text-secondary hover:text-primary hover:border-primary transition-colors">XL</button>
+</div>
+</div>
+<!-- Harga -->
+<div>
+<h3 class="font-label-caps text-label-caps mb-4 text-primary">HARGA (IDR)</h3>
+<div class="flex gap-2 items-center">
+<input class="w-full bg-transparent border-b border-outline-variant border-0 border-b-px focus:ring-0 focus:border-primary font-body-md text-body-md px-0 py-2 placeholder:text-secondary" placeholder="Min" type="text"/>
+<span class="text-secondary">-</span>
+<input class="w-full bg-transparent border-b border-outline-variant border-0 border-b-px focus:ring-0 focus:border-primary font-body-md text-body-md px-0 py-2 placeholder:text-secondary" placeholder="Max" type="text"/>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<!-- Active Filters & Sorting -->
+<div class="flex justify-between items-center mb-8 border-b border-outline-variant pb-4">
+<div class="flex gap-2">
+<span class="px-3 py-1 border border-outline-variant rounded-none font-label-caps text-label-caps text-primary flex items-center gap-2">
+                            Ukuran: M
+                            <button class="hover:text-secondary"><span class="material-symbols-outlined text-[14px]" data-icon="close">close</span></button>
+</span>
+</div>
+<div class="flex items-center gap-2 cursor-pointer group">
+<span class="font-label-caps text-label-caps text-secondary group-hover:text-primary transition-colors">URUTKAN: TERBARU</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors text-[18px]" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-16">
+<!-- Product 1 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden relative">
+<img alt="Bomber Klasik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A male model wearing a sleek, minimalist black bomber jacket standing against a stark white architectural background. The lighting is bright and high-key, emphasizing the clean lines and subtle texture of the garment. The overall aesthetic is quiet luxury, editorial fashion photography with a focus on structural simplicity and deep monochrome contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOndYJTAdBwQMZTEH2QOWLAmd2TaGxwBGkiX4RDKaClSsPa-tFDvavUbdtu2657CFyTVsRrouwdWj96uklCxU8LgZEYfFf1t8HoAjmN7jz4S0btL3jOedt8XB0yFHP7FNDPltsJk-b_b96UGzguMmJdZrsO-KWV-ru9wYCXprComFGE7FsVqJRI3B8USG5oeAAjnyisXUnv7YH8hMN69NRgZa0D-b1gwrAXGUzzxmrZI8tZw9J405V3QnFfpQ7b8DjX_9_rVgvUL4"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-surface/80 backdrop-blur-sm border border-outline-variant font-label-caps text-label-caps text-primary">BARU</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Bomber Klasik</h3>
+<p class="font-body-md text-body-md text-secondary">Hitam Jet</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp185.000</p>
+</div>
+</a>
+<!-- Product 2 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="Jaket Oversized" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A person wearing an oversized, structured beige canvas jacket in a brightly lit, minimalist gallery space. The camera angle is slightly low, highlighting the architectural drape of the oversized fit. Shadows are sharp and graphic against the pristine white walls, reinforcing the high-end editorial, quiet luxury aesthetic of the clothing brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCw7Fyt8MTnooCNR272VkqKyy--AfVH6IDHREDrkL3d7ODmASo6foCioqvPktVnEoliGRQ1-AxkrVxminfN6pnnp6yMrLIoNp7nMegnEnkoeCI2uMMuiGt6l9YktnRiZiszOF-RoYrvLlB6znYmgWu6Bq43e9gwzXX4zR2d8m0QzxeBbaC9EKnGt1x0ofkRC0IFNAzE-byBPiIB3lRQT-DVw_YSfvLnB2_eUDB42iNLWXwZ6-uSYM08_C3lsFKSZipEDH1bg1ELf8"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Jaket Oversized</h3>
+<p class="font-body-md text-body-md text-secondary">Kanvas Krem</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp220.000</p>
+</div>
+</a>
+<!-- Product 3 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden relative">
+<img alt="Windbreaker Utility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A close-up fashion shot of a technical grey utility windbreaker featuring matte hardware and clean structural seams. The lighting is diffused and cool, creating a highly modern, functional atmosphere. The background is a stark white void, forcing absolute focus on the garment's precise tailoring and minimalist design language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE-4gJyGhvuM5e3mdgUyegJpZzmd77qhvRyajA3xrQsNTktguHcuMI1SN4I8g7BdU1SsZBskxOd5R7RLIGomwlHoEXAWofjJY2k_Yrn8drQ3l11TUvHu0gogFsmRVMfHknMLefLJnYu334MHKRu3rHFlMWWjbrO99CN2N53E9qZYPFmXd_DvX3C5-w8P8TQUSP67Oig8JqlHkxodoJmpepdst5davM5IVJSndYdpw9iDBal6p_6EHR85CvbVA7QKH2x9i4FZwiZ4E"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-surface/80 backdrop-blur-sm border border-outline-variant font-label-caps text-label-caps text-primary">TERBATAS</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Windbreaker Utility</h3>
+<p class="font-body-md text-body-md text-secondary">Abu-abu Teknis</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp310.000</p>
+</div>
+</a>
+<!-- Product 4 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="Hoodie Structured" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A minimalist fashion portrait of a model in a thick, structured white hoodie with no drawstrings or visible branding. The setting is pure white, creating an almost invisible transition between the garment and the background, relying solely on subtle tonal layering and shadows to define the architectural shape of the hoodie." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlM91-Vte0HcXB-NJaOczEq2aFKXPNnNKc9DID0OwbUDCw-6Z6vhiS6Ya_MVnSHx_tpYTOUF5wEyhRGl6vYPLXOhqmO3Bde4jmOd16w9YHAizTqV1VZLJzAvLKQ0_Kw3gc8HNNlXCaOmvFYPJpcG2ZtNToIBXf5kvSpJ67jyb7FF6xQ6ftq41uPqQ6JE3_oAiz_2-LZzi7X-XWi-lxr5_MYG9wUBVb4rK0N460dD_4AgToNouj9LbHaGPxBxcHOLAa3_KuUFnPIpc"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Hoodie Structured</h3>
+<p class="font-body-md text-body-md text-secondary">Putih Tulang</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp145.000</p>
+</div>
+</a>
+<!-- Product 5 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="Kemeja Kargo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A sophisticated editorial image showcasing a black cargo shirt with hidden buttons and sharp, clean pockets. The model is positioned asymmetrically in the frame against a brutalist concrete and white plaster backdrop. The monochromatic black and white palette emphasizes the quiet luxury and severe minimalism of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO4FlSukrm14Fzvrpteosv3hTgEfeGo6xfvGjT_u5pXp-p-kkRRPIOjEAehAj4A5_jf6OLD-5W89BcW9aEapXk1XkhW0tl6HyzOg4-xUzS1WH4BFQ_1cRKnS5SApFatYf-QLHubA13plmcNtjJ4oW-Thh2KJA5twQcGav5DpjWwa3BFVNlz8YUqN0frKzpEyqEIwDqWMldxRILzt_3-IC2SdzCOqOXLVn1upjkHz0MAwHd7DoCFquLCY4fCN-phPTv1Gz_JidUCx0"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Kemeja Kargo</h3>
+<p class="font-body-md text-body-md text-secondary">Hitam Jet</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp195.000</p>
+</div>
+</a>
+<!-- Product 6 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="Celana Parasut" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A fashion shot of voluminous, structured parachute pants in a stark white setting. The lighting is extremely bright, washing out the background and making the dark fabric of the pants stand out like a sculptural form. The aesthetic is highly curated, architectural, and strictly adheres to a minimalist monochromatic theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATRZyOs7SO1mx7zF0-QTFaT6cp75paosMMm0CmaOA6__9EoyET812_z9w-_HtRwYOUUEAFWiFTmSdARe5F1t_jNbiUfQtN9Ie_X3DCExh53Az8-eFEJ5giE9yqDctu7TQTuFgMoJZHeTMxy0YWaYxIT3ouS8WB5WxbJfJGCTdIr7roWNKBpPOiW3cp_3TuRIWTG5BBTYyml-uFH3oSaIRgRRU0wR4rH59FJlumulvPSmt41V4m7eoHz3nXZpY1lAoGOCWtCene8pA"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Celana Parasut</h3>
+<p class="font-body-md text-body-md text-secondary">Hitam Jet</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp250.000</p>
+</div>
+</a>
+<!-- Product 7 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="T-Shirt Berat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A minimalist presentation of a heavy-weight, perfectly cut white t-shirt hanging in a void-like white space. The image is devoid of any distracting elements, focusing entirely on the drape and premium texture of the fabric. The lighting creates subtle, soft shadows that communicate the elevated, quiet luxury nature of the simple garment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOJPhnkguWtcsnrxVWPah5cO91p9i1xIfw3y4NUIefKtAtL5t9pj4wtUvLQeNHaqKZZy6-yQczoW9CAS8IYQ7yTmCGRMelrD6rrPMAmxPJR9RL-QDdXK-4oyi3XdLvqdmmk2_3jzZxNHke1MI5rPCmUsedmOI48fEYJ-sHXp_PV0Py6nMiqKnC2Dh7mnaiRR_cSH312DihK1_sEqs4ulIlGaGDowsyDVclrjg3MBDml_7gRc4DQ_QWwYqqP62gWud28yjLs-enxjY"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">T-Shirt Berat</h3>
+<p class="font-body-md text-body-md text-secondary">Putih Murni</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp120.000</p>
+</div>
+</a>
+<!-- Product 8 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="Jaket Denim Struktural" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A striking editorial photograph of a black structural denim jacket with perfectly straight seams and no visible hardware. The garment is photographed against a vast, empty white wall, emphasizing architectural spacing and pure minimalism. The sharp contrast between the deep black denim and bright background highlights the brand's confident aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoULz15782ndgNjZ-rqYmfXFHH0eANQiWk2EQ6EcNwDkWGhpkRxeCm4tDg-g79yBmxSKqrAhwfe0CDOOsWKJSstES0B6r8JO_8sOIXKS8sNbttao-8Pu22jTpDomHB-gbky-uAtWOxj6lSHtOqP2yPIjZ_12EsGmJb516r2q5qUrCnt3odH9hmo85xqQd2F4DI0lYKLK0ZtDFxj0EhCYQ-qRyGwZUytPDZ_85UaM5fIn7ywWbzNvCgQAj6RZr3nBzpeGWukEZ_yu0"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Jaket Denim Struktural</h3>
+<p class="font-body-md text-body-md text-secondary">Hitam Pudar</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp280.000</p>
+</div>
+</a>
+<!-- Product 9 -->
+<a class="group block" href="detail-produk.html">
+<div class="aspect-[3/4] bg-surface-variant mb-4 overflow-hidden">
+<img alt="Sweatshirt Esensial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="An austere, high-end fashion image of a simple grey essential sweatshirt on a model whose face is cropped out. The framing is asymmetrical, leaving a large amount of negative white space to the right of the image. The mood is timeless, quiet, and deeply focused on the raw quality and fit of the apparel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjT9E2qkDvBiXyYUUy4nlG5E4AGHU0pWR8BPGvlA_gZjLFUcnc1yTed-6_dowjaas8W4As0aWc9c7wC963Bphu8EgI1cL-nVHPFNpWz1-inl_7Ibf4hZqZpC1CsmmAV1Lt5spLifXOikQBxSLeaEmwj5-5pEac3WYaed91xgt2oqcFLWtqoYT7WfUSJFluFeMYIDL50ziMNbVjTNYfYXWCkdLKWZFq5Cnp72sqEYWMPHPKsX_UV8LeTjyyXz-k3ExaKc7xK7a6xdA"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-body-md text-body-md text-primary mb-1">Sweatshirt Esensial</h3>
+<p class="font-body-md text-body-md text-secondary">Abu-abu Teknis</p>
+</div>
+<p class="font-body-md text-body-md font-medium text-primary">Rp165.000</p>
+</div>
+</a>
+</div>
+<!-- Pagination -->
+<div class="mt-24 flex justify-center items-center gap-8 border-t border-outline-variant pt-8">
+<button class="text-secondary hover:text-primary transition-colors disabled:opacity-30 flex items-center gap-2 font-label-caps text-label-caps" disabled="">
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
+                        SEBELUMNYA
+                    </button>
+<div class="flex gap-4 font-body-md text-body-md">
+<span class="text-primary font-medium">1</span>
+<a class="text-secondary hover:text-primary transition-colors" href="#">2</a>
+<a class="text-secondary hover:text-primary transition-colors" href="#">3</a>
+</div>
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center gap-2 font-label-caps text-label-caps">
+                        SELANJUTNYA
+                        <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface dark:bg-surface w-full py-section-gap border-t border-outline-variant dark:border-outline flat no shadows mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop w-full max-w-container-max mx-auto max-md:px-margin-mobile">
+<div class="md:col-span-4 mb-12 md:mb-0 flex flex-col justify-between">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface tracking-tight mb-8 block" href="#">JUZT.</a>
+<p class="font-body-md text-body-md text-secondary max-w-xs">© 2024 JUZT. Mendefinisikan ulang gaya Gen Z melalui kejujuran material dan harga yang masuk akal.</p>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">AGREEMENT</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">PENGEMBALIAN</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">PRIVASI</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">BELANJA</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">AKUN</a>
+</div>
+<div class="flex flex-col gap-4 sm:col-span-2">
+<span class="font-label-caps text-label-caps text-primary mb-2">SOSIAL</span>
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">FACEBOOK</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#">YOUTUBE</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

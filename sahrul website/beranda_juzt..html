@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JUZT. | Didesain untuk Generasimu.</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#e1dfdf",
+                    "outline": "#747878",
+                    "outline-variant": "#c4c7c7",
+                    "on-background": "#1c1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "surface-bright": "#fdf8f8",
+                    "surface-container-low": "#f7f3f2",
+                    "primary-fixed": "#e5e2e1",
+                    "tertiary-fixed-dim": "#cac6c4",
+                    "surface-container-high": "#ebe7e6",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-tertiary-fixed-variant": "#484645",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#464747",
+                    "on-primary-fixed": "#1c1b1b",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "on-primary-fixed-variant": "#474746",
+                    "secondary-fixed": "#e4e2e2",
+                    "secondary": "#5e5e5e",
+                    "tertiary-container": "#1c1b1a",
+                    "primary": "#000000",
+                    "surface-tint": "#5f5e5e",
+                    "inverse-on-surface": "#f4f0ef",
+                    "on-primary-container": "#858383",
+                    "on-surface": "#1c1b1b",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f1edec",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#868382",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e6e2df",
+                    "inverse-primary": "#c8c6c5",
+                    "on-surface-variant": "#444748",
+                    "primary-container": "#1c1b1b",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary-container": "#636262",
+                    "surface": "#fdf8f8",
+                    "tertiary": "#000000",
+                    "background": "#fdf8f8",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "surface-dim": "#ddd9d8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "section-gap": "128px",
+                    "gutter": "24px",
+                    "container-max": "1440px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "label-caps": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "display-lg": [
+                            "Noto Serif"
+                    ],
+                    "button-label": [
+                            "Inter"
+                    ],
+                    "headline-sm": [
+                            "Noto Serif"
+                    ],
+                    "headline-md": [
+                            "Noto Serif"
+                    ],
+                    "display-lg-mobile": [
+                            "Noto Serif"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "button-label": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.15em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface tracking-tight" href="beranda.html">
+                JUZT.
+            </a>
+<!-- Navigation Links (Web only) -->
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 uppercase" href="koleksi.html">BELANJA</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 uppercase" href="koleksi.html">KOLEKSI</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 uppercase" href="#">KEUNGGULAN</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer active:opacity-70 uppercase" href="#">ARSIP</a></li>
+</ul>
+<!-- Trailing Icons -->
+<div class="flex gap-4 items-center">
+<button class="text-primary dark:text-on-surface hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+<button class="text-primary dark:text-on-surface hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</button>
+<button class="text-primary dark:text-on-surface hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary dark:text-on-surface hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-20"> <!-- Offset for fixed nav -->
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<!-- Text Area (Asymmetrical Layout) -->
+<div class="md:col-span-5 flex flex-col justify-end pb-8 md:pb-16 order-2 md:order-1">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">
+                        Didesain untuk Generasimu.
+                    </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-md">
+                        Koleksi pakaian arsitektural dengan harga yang masuk akal.
+                    </p>
+<div>
+<a class="inline-block bg-primary text-on-primary rounded-none uppercase font-button-label text-button-label py-4 px-8 hover:bg-surface-tint transition-colors duration-300" href="koleksi.html">
+                            JELAJAHI KOLEKSI
+                        </a>
+</div>
+</div>
+<!-- Image Area -->
+<div class="md:col-span-7 order-1 md:order-2 mb-8 md:mb-0">
+<div class="w-full aspect-[4/5] bg-surface-container-highest relative overflow-hidden">
+<img alt="Minimalist Jacket" class="absolute inset-0 w-full h-full object-cover" data-alt="A striking minimalist black jacket suspended or displayed on a structural concrete plinth in a vast, stark architectural space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The scene relies on a sophisticated palette of deep blacks and pristine whites, emphasizing stark contrasts and pure forms. The mood is serene, exclusive, and high-end editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyMuN9R_lWkWaGttF6INZCPgFFH0dsOH0pwG9Pccx4YybqusRFpbrRULKKikfjEZueBKNkF0opg_VQCBZviHqffyWgAhfkbTrlF9FBTwxfMzwENg6Gwa8FKNZ8PPW-P-f7gTvpCR2pH7BjYCEiZd-8C11uYpAZDVSNb8677H2MT_c9_ZgWdqC_WtdluDYgskaic0rW9beRgSCHiy0P68VO2NEMfZpfVxZsBSSsEMtv8dsU_aAwYYvk0bFvcyLxGlW1ZqwqgMd0eSM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap border-t border-outline-variant">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-md text-headline-md text-primary">Karya Terpilih</h2>
+<a class="hidden md:inline-block font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors duration-200 uppercase" href="koleksi.html">Lihat Semua</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product 1 -->
+<a class="group cursor-pointer block" href="#">
+<div class="w-full aspect-[3/4] bg-surface-container-high mb-6 overflow-hidden relative">
+<img alt="Bomber Klasik" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A high-end editorial product shot of a minimalist black classic bomber jacket on a pure white background. The jacket is perfectly styled, showing structural integrity and clean lines. High-key, even lighting eliminates harsh shadows, focusing entirely on the garment's texture and form. The aesthetic is strictly monochrome, clean, and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC4HocTVlIUS7ayMjxSzqzIu2VhZDFDddeaHwcUf3yB8D7y0cjLWcuI8_oie7zK2i8OiyolIjPsLCY0ZXcAltT4y-iobCdrdUftXxfaYvEUcMpza4jW2JMpV5Vg4mJlgmVjDH-_NrU3iipLGWXeTZRgGbi-5WSi5VTLWTfnU6s2cfxfCkvU0G9eSgFjtpTzsC340V0pydlIihXApU1ifBTDLLiq4uem8Q1Tu_KdLB4gu3eHHkjsXGXrBXeuWGtrNht79R2Nk_ctj4"/>
+</div>
+<div class="flex justify-between items-start">
+<h3 class="font-body-md text-body-md text-primary">Bomber Klasik</h3>
+<p class="font-body-md text-body-md text-primary font-bold">Rp185.000</p>
+</div>
+</a>
+<!-- Product 2 -->
+<a class="group cursor-pointer block" href="#">
+<div class="w-full aspect-[3/4] bg-surface-container-high mb-6 overflow-hidden relative">
+<img alt="Jaket Oversized" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A high-end editorial product shot of a minimalist black oversized jacket on a pure white background. The jacket features distinct, exaggerated architectural proportions. High-key, even lighting emphasizes the fabric drape and structural silhouette. The image maintains a strict monochrome palette, conveying a sense of quiet luxury and modern avant-garde design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQIjunb9ssqvhoBUFcsTOyOL-TX5y09g65qubjgUdhucJzA8ys7YDg8-fmxOv9WQCwFHn0qBpAix1HZoZ46XfajBN_N56Km3hKwWyOLrHQsVGkI090ZJeqmbAwzweTTN_IPvFdbb4Skqdz-c3YU2XKyFKdIBH1NA_PRQXuCLZzQPlrUeVdTYgdImYWlTCyo2-14d9sp31FdltupUgzKQxzQMkvOu85pe5i0UbtiF0wIS876da8rsIr8qLPaxHS8RPhAsKCNGSKjQ8"/>
+</div>
+<div class="flex justify-between items-start">
+<h3 class="font-body-md text-body-md text-primary">Jaket Oversized</h3>
+<p class="font-body-md text-body-md text-primary font-bold">Rp220.000</p>
+</div>
+</a>
+<!-- Product 3 -->
+<a class="group cursor-pointer block" href="#">
+<div class="w-full aspect-[3/4] bg-surface-container-high mb-6 overflow-hidden relative">
+<img alt="Windbreaker Utility" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A high-end editorial product shot of a minimalist black utility windbreaker jacket on a pure white background. The jacket highlights functional details like subtle matte zippers and clean paneling. High-key, soft lighting highlights the technical fabric's subtle sheen without creating deep shadows. The visual style is highly controlled, monochrome, and technically precise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_0ftHl2P0RVofNVNEnHHIVHQ49GO30VsjvfwE-e6rXhkOBUQaPKvbZBTE_jUC1vMprglH9pZx0GQJXpaBtMXFOFo3SwqB5cF5jjauW9Uxb-G68nXJclPyksLI84vPYLQsT7UsVy3svQHmIT9Y0dDApkh6qhdbtGzq3qCnkA5qor8DBQAJnRG4A5CZRO5zwe2sfjiofevA5V3jMDf24E-U1YiHeF_GKsmhz2YvMHBnirqlCSGd7yr5Upg_EsbdTOJC107Eb_7n1jg"/>
+</div>
+<div class="flex justify-between items-start">
+<h3 class="font-body-md text-body-md text-primary">Windbreaker Utility</h3>
+<p class="font-body-md text-body-md text-primary font-bold">Rp310.000</p>
+</div>
+</a>
+</div>
+<div class="mt-12 md:hidden text-center">
+<a class="inline-block font-label-caps text-label-caps text-primary border-b border-primary pb-1 uppercase" href="koleksi.html">Lihat Semua</a>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="bg-surface-container-lowest py-section-gap border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="pr-0 md:pr-24 order-2 md:order-1 mt-12 md:mt-0">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-8">
+                            Seni Sebuah Jaket
+                        </h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8">
+                            Kami percaya bahwa desain yang baik tidak memerlukan dekorasi berlebih. Setiap jahitan, potongan, dan material dipilih dengan tujuan struktural yang jelas, menghasilkan karya yang tak lekang oleh waktu.
+                        </p>
+<a class="font-button-label text-button-label text-primary uppercase tracking-[0.15em] border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors duration-200" href="#">
+                            BACA FILOSOFI KAMI
+                        </a>
+</div>
+<div class="w-full aspect-square bg-surface-container-high relative overflow-hidden order-1 md:order-2">
+<img alt="Detail Jahitan" class="absolute inset-0 w-full h-full object-cover" data-alt="A moody, abstract close-up shot focusing on the intricate texture and stitching of a premium black fabric, contrasting sharply with a pure white geometric background. The lighting is directional, creating subtle highlights on the material's surface to reveal its quality. The composition is highly architectural and asymmetrical, embodying a high-end, monochrome quiet luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3Ns4A9IacUPsiIxcjSdoqyPjb-Tzpe8YS0SfbNBihP6ioFpcyiashCjbo3NIg84egMZYOhpHZpvNQI3eo1yjPtOsKcZtd_Txp58M8Nweww2OiSwYjzzPzH_M2t2ygG_aXNiZXuBmX5yBBZzkglz3fEbt6pxRq3MaAWQURgAYTkEOUaAN4UP1IULCJIhsJSDmTbtvxcu3vf5ko_CYY2nLMwuRaf_5jVjbuHUNVALjkA4KXOb3MPDEWUrVlRrRXKSt7o1Eg78W8oVw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap border-t border-outline-variant text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Bergabung dengan Komunitas JUZT.</h2>
+<p class="font-body-md text-body-md text-secondary mb-10">Dapatkan akses awal ke rilis koleksi terbaru dan editorial eksklusif.</p>
+<form class="flex flex-col md:flex-row gap-4 justify-center items-end" onsubmit="event.preventDefault();">
+<div class="w-full md:w-96">
+<label class="sr-only" for="email">Alamat Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline text-primary font-body-md text-body-md px-0 py-3 focus:ring-0 focus:border-primary placeholder:text-secondary transition-colors rounded-none" id="email" placeholder="Alamat Email" type="email"/>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary rounded-none uppercase font-button-label text-button-label py-4 px-8 hover:bg-surface-tint transition-colors duration-300 mt-4 md:mt-0" type="submit">
+                        DAFTAR
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface dark:bg-surface w-full py-section-gap border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="md:col-span-4 mb-12 md:mb-0 flex flex-col justify-between">
+<div>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface block mb-6">JUZT.</span>
+</div>
+<p class="font-body-md text-body-md text-secondary dark:text-on-secondary-container max-w-xs">
+                    © 2024 JUZT. Mendefinisikan ulang gaya Gen Z melalui kejujuran material dan harga yang masuk akal.
+                </p>
+</div>
+<!-- Links Group 1 -->
+<div class="md:col-span-4 md:col-start-6 mb-8 md:mb-0">
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">BELANJA</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">AKUN</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">AGREEMENT</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">PENGEMBALIAN</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">PRIVASI</a></li>
+</ul>
+</div>
+<!-- Links Group 2 (Socials) -->
+<div class="md:col-span-3">
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">INSTAGRAM</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">FACEBOOK</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary dark:text-on-secondary-container hover:text-primary dark:hover:text-on-surface transition-colors duration-200 cursor-pointer uppercase" href="#">YOUTUBE</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
